@@ -1,0 +1,24 @@
+{
+    "name": "amitesh-singh",
+    "email": "amitesh.jy.786@gmail.com",
+    "description": "Create a Library using RequireJS with mixed how many modules you want",
+    "main": "index.js",
+    "scripts": {
+        "clean:js": "del-cli js/built.min.js",
+        "start": "node r.js -o build.js"
+    },
+    "version": "0.0.2",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/amitesh786/"
+    },
+    "license": "ISC",
+    "keywords": [],
+    "author": "Amitesh Singh",
+    "devDependencies": {
+        "del-cli": "^1.1.0"
+    },
+    "dependencies": {
+        "requirejs": "^2.3.5"
+    }
+}

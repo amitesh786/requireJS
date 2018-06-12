@@ -18,14 +18,17 @@
     "author": "Amitesh Singh",
     "devDependencies": {
         "del-cli": "^1.1.0",
+        "grunt": "^1.0.3",
+        "grunt-contrib-jshint": "^1.1.0",
         "uglify-js": "^3.4.0"
     },
     "dependencies": {
-        "grunt": "^1.0.3",
+        "grunt-cli": "^1.2.0",
         "grunt-contrib-clean": "^1.1.0",
-        "requirejs": "^2.3.5",
         "grunt-contrib-concat": "^1.0.1",
-        "grunt-contrib-requirejs": "latest",
-        "grunt-contrib-uglify": "^3.3.0"
+        "grunt-contrib-requirejs": "^1.0.0",
+        "grunt-contrib-uglify": "^3.3.0",
+        "grunt-requirejs": "^0.4.2",
+        "requirejs": "^2.3.5"
     }
 }

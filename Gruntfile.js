@@ -8,9 +8,6 @@ module.exports = function (grunt) {
             }
         },
         requirejs: {
-            // packages: [
-            //     { name: '% pkg.name %', location: '% pkg.version %',  main: '% pkg.email %' }
-            // ],
             build: {
                 options: {
                     baseUrl: ".",
@@ -29,11 +26,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
-    // grunt.loadNpmTasks('grunt-requirejs');
-
-    // Load the plugin that provides the "uglify" task
-    // grunt.loadNpmTasks('grunt-contrib-uglify');
-    // grunt.loadNpmTasks('grunt-contrib-concat');
-
+    
+    // Clean + Build Package
     grunt.registerTask("start", ["clean:main", "requirejs:build"]); 
 };

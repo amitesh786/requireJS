@@ -1,4 +1,9 @@
 module.exports = function (grunt) {
+
+    // load Npm Task
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
+
     grunt.initConfig(
         {
             pkg: grunt.file.readJSON('package.json'),
@@ -24,10 +29,7 @@ module.exports = function (grunt) {
             }
         }
     );
-
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-requirejs');
     
     // Clean + Build Package
-    grunt.registerTask("start", ["clean:main", "requirejs:build"]); 
+    grunt.registerTask("start", ["clean:main", "requirejs:build"]);
 };

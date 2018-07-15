@@ -4,7 +4,6 @@
     "description": "Create a Library using RequireJS with mixed how many modules you want",
     "main": "index.js",
     "scripts": {
-        "clean:js": "del-cli js/built.min.js",
         "start": "node r.js -o build.js",
         "grunt": "grunt start"
     },
